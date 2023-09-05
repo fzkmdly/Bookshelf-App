@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang=en>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Bookshelf Apps</title>
+		<link rel="stylesheet" href="./style/style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+	</head>
+<body>
+	<!-- HEADER -->
+	<header>
+		<div class="header-wrap">
+			<h1>&nbsp;&nbsp;<span>Bookshelf Apps</span></h1>
+		</div>
+		<nav class="navbar">
+			<center><p>Made By : Faiz Akhmad Daulay</p></center>
+		</nav>
+	</header>
+
+	<!-- BODY -->
+	<main>
+		<div id="content">
+			<article class="content-w1">
+				<section class="input_section" id="inputSection">
+					<h2 id="h2InputSection">Masukkan Buku Baru<hr></h2>
+					<form id="form">
+						<div class="input" id="sectionTitle">
+							<label for="inputBookTitle">Judul</label>
+							<input id="inputBookTitle" type="text" placeholder="Masukkan judul buku" required/>
+						</div>
+						<div class="input" id="sectionAuthor">
+							<label for="inputBookAuthor">Penulis</label>
+							<input id="inputBookAuthor" type="text" placeholder="Masukkan nama penulis buku" required/>
+						</div>
+						<div class="input" id="sectionYear">
+							<label for="inputBookYear">Tahun</label>
+							<input id="inputBookYear" type="number" placeholder="Masukkan tahun terbit buku" required/>
+						</div>
+						<div class="input_inline">
+							<label for="inputBookIsComplete">Selesai dibaca</label>
+							<input id="inputBookIsComplete" type="checkbox" />
+						</div>
+						<button id="bookSubmit" type="submit">&nbsp;&nbsp;
+						<span>Masukkan Buku</span></button>
+					</form>
+				</section>
+			</article>
+		
+			<article class="content-w2">
+				<section class="book_shelf" id="bookShelfUncompleted">
+					<h2 id="uncompletedH2">Belum selesai dibaca
+						<hr>
+					</h2>
+				
+					<div id="incompleteBookshelfList" class="book_list">
+						
+					</div>
+				</section>
+			</article>
+		</div>
+			
+		<aside>
+			<article class="content-aw1">
+				<section class="search_section book_shelf" id="searchSection">
+					<h2 id="searchSectionH2">Cari Buku
+						<hr>
+					</h2>
+					<form id="searchBook">
+						<label for="searchBookTitle">Keyword</label>
+						<input id="searchBookTitle" type="text" placeholder="Pencarian Data"/>
+						<button id="searchSubmit" type="submit">&nbsp;
+						<span>Cari</span></button>
+					</form>
+				
+					<div id="searchResult" class="book_list" style="width: 100%"></div>
+				</section>
+			</article>
+			<article class="content-aw2">
+				<section class="book_shelf" id="bookShelfCompleted">
+					<h2 id="completedH2">Selesai dibaca<hr></h2>
+				
+					<div id="completeBookshelfList" class="book_list"></div>
+				</section>
+			</article>
+		</aside>
+	</main>
+
+	
+	<!-- FOOTER -->
+	<footer>
+		<article class="container-footer">
+			<h3>Copyright © 2021 | All rights Reserved Bookshelf Apps</h3>
+		</article>
+	</footer>
+
+	<script src="./js/main.js"></script>
+</body>
+</html>
